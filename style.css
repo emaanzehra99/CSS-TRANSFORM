@@ -1,0 +1,36 @@
+.container {
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    border: 2px solid maroon;
+    color: white;
+    /* transform: rotate(40deg); */
+
+    /* We also have another way to rotate an object. let's say 360 degree is one turn.
+    And we know ke 90 degree hota h 360 degree ka 0.25th part
+    We can also rotate about x, y and z axis */
+    transform: rotate(0.25turn);
+
+    /* We also haved scale property. 
+    Also applicable on all three axis*/
+    transform: scale(2.5);
+
+    /* Skew sirf x aur y axis pr, not on z-axis */
+    transform: skew(30deg);
+
+    /* If we do 34% instead, it means ke apni width ke 34% pr translate hojae ga! */
+    transform: translateX(90px);
+    transform: translateY(60px);
+
+    /* Use shorthand of translate property if u want to apply more than one translate proerty at a time. */
+    transform: rotate(0.25turn) scale(2.5) translateX(90px) translateY(60px);
+}
